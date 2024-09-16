@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+.gallery-container {
+    width: 100%;
+    max-width: 1200px;  
+    margin: 0 auto;      
+    padding: 20px;       
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;         
+    justify-content: center;
+}
+
+.nav-menu a {
+    margin-left: 40px;          
+    text-decoration: none;      
+    color: #888;               
+    font-size: 14px;            
+    letter-spacing: 1px;        
+    text-transform: uppercase; 
+}
+
+.nav-menu a:hover {
+    color: #000000;
+}
