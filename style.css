@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
+.fonts{
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    border-left: 400px; /*solid black;*/  
+    border-right: 400px; /*solid black;*/ 
+    margin: 0;
+}
+
 .gallery-container {
     width: 100%;
     max-width: 1200px;  
     margin: 0 auto;      
     padding: 20px;       
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
     font-size: 30px;
 }
 
