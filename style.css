@@ -55,3 +55,23 @@ body {
 #instagram{
     color: #A020F0;
 }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    /* position: relative; */
+}
+footer a {
+    margin: 0 20px; /* Abstand zwischen den Icons */
+}
+#impressum{
+    color: #888;
+    text-decoration: none;
+}
+#impressum:hover{
+    color: black;
+}
