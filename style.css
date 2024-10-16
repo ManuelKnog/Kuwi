@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
 .fonts{
@@ -36,42 +37,24 @@ body {
     color: #000000;
 }
 
-#container-contact {
+.Künstler{
+    height: 500px;
+}
+
+
+.divide {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    gap: 100px;
 }
 
-#container-contact .text-section {
-    text-align: center;
-    margin: auto auto;
+.Toaster{
+    height: 400px;
 }
 
-#container-contact #emailform {
-    margin: auto auto
+.Löwe{
+    height: 400px;
 }
-#facebook{
-    color: #3b5998;
-}
-#instagram{
-    color: #A020F0;
-}
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    /* position: relative; */
-}
-footer a {
-    margin: 0 20px; /* Abstand zwischen den Icons */
-}
-#impressum{
-    color: #888;
-    text-decoration: none;
-}
-#impressum:hover{
-    color: black;
+.Sun {
+    height: 400px;
 }
