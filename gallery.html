@@ -1,95 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="fonts">
     <header>
         <div class="gallery-container">
-            <nav class="nav-menu">
-                <h2>Galerie</h2>
-                <a href="/gallery.html">GALLERY</a>
-                <a href="/kontact.html">KONTAKT</a>
-                <a href="/about.html">ABOUT</a>
-                <a href="/impressum.html">IMPRESSUM</a>
+            <div class="header-container">
+                <h2 class="page-title">Galerie</h2>
+                <div class="burger-menu" id="burger-menu">&#9776;</div>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="gallery.html">GALLERY</a>
+                <a href="kontact.html">KONTAKT</a>
+                <a href="about.html">ABOUT</a>
+                <a href="impressum.html">IMPRESSUM</a>
             </nav>
         </div>
     </header>
-
-    <table border="2" cellpadding="10"></table>
+    <div id="galerie">
+    <table border="2" cellpadding="10">
         <tr>
-            <td>
-                <div>
-                    <a href="seite1.html">
-                        <img src="Photos/Audi.jpeg" alt="Bild 1" width="150" height="150">
-                    </a>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <a href="seite2.html">
-                        <img src="Photos/Ferrari.jpeg" alt="Bild 2" width="150" height="150">
-                    </a>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <a href="seite3.html">
-                        <img src="Photos/Porsche911.jpeg" alt="Bild 3" width="150" height="150">
-                    </a>
-                </div>
-            </td>
+            <td><a href="seite1.html"><img src="Photos/Audi.jpeg" alt="Bild 1" width="150" height="150"></a></td>
+            <td><a href="seite2.html"><img src="Photos/Ferrari.jpeg" alt="Bild 2" width="150" height="150"></a></td>
+            <td><a href="seite3.html"><img src="Photos/Porsche911.jpeg" alt="Bild 3" width="150" height="150"></a></td>
         </tr>
-        <tr>
-            <td>
-                <div>
-                    <a href="seite4.html">
-                        <img src="Photos/Löwe.jpeg" alt="Bild 4" width="150" height="150">
-                    </a>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <a href="seite5.html">
-                        <img src="dein-bild5.jpg" alt="Bild 5" width="150" height="150">
-                    </a>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <a href="seite6.html">
-                        <img src="dein-bild6.jpg" alt="Bild 6" width="150" height="150">
-                    </a>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div>
-                    <a href="seite7.html">
-                        <img src="dein-bild7.jpg" alt="Bild 7" width="150" height="150">
-                    </a>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <a href="seite8.html">
-                        <img src="dein-bild8.jpg" alt="Bild 8" width="150" height="150">
-                    </a>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <a href="seite9.html">
-                        <img src="dein-bild9.jpg" alt="Bild 9" width="150" height="150">
-                    </a>
-                </div>
-            </td>
-        </tr>
+        <!-- Weitere Bildzeilen hier -->
     </table>
-    
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

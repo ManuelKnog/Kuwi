@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
-.fonts{
+.fonts {
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -11,50 +10,150 @@ body {
 
 .gallery-container {
     width: 100%;
-    max-width: 1200px;  
-    margin: 0 auto;      
-    padding: 20px;       
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     box-sizing: border-box;
     font-size: 30px;
 }
 
+/* Container für den Titel und das Burger-Menü */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* H2-Überschrift */
+.page-title {
+    margin: 0;
+}
+
+/* Navigation */
 .nav-menu {
     display: flex;
-    align-items: center;         
+    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-menu a {
-    margin-left: 40px;          
-    text-decoration: none;      
-    color: #888;               
-    font-size: 14px;            
-    letter-spacing: 1px;        
-    text-transform: uppercase; 
+    margin: 0 20px;
+    text-decoration: none;
+    color: #888;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .nav-menu a:hover {
     color: #000000;
 }
 
-.Künstler{
-    height: 500px;
+/* Burger-Menü für Mobilgeräte */
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #888;
 }
 
-
+/* Grid-Layout */
 .divide {
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 100px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
 }
 
-.Toaster{
-    height: 400px;
+/* Galerie-Grundstil */
+#galerie {
+    display: grid;
+    gap: 5px; /* Größerer Abstand zwischen den Bildern */
+    padding: 20px;
 }
 
-.Löwe{
-    height: 400px;
+/* Die Bilder füllen die gesamte Spalte und sind größer */
+#galerie img {
+    width: 100%; /* Bild passt sich der Spaltenbreite an */
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
 }
-.Sun {
-    height: 400px;
+
+/* Hover-Effekt für Bilder */
+#galerie img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Layout für verschiedene Bildschirmgrößen */
+@media (min-width: 1200px) {
+    #galerie {
+        grid-template-columns: repeat(3, 1fr); /* Drei große Spalten für große Bildschirme */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    #galerie {
+        grid-template-columns: repeat(2, 1fr); /* Zwei große Spalten für mittlere Bildschirme */
+    }
+}
+
+@media (max-width: 767px) {
+    #galerie {
+        grid-template-columns: 1fr; /* Eine Spalte für kleine Bildschirme */
+    }
+}
+
+
+
+/* Media Queries für mobile Ansicht */
+
+@media (max-width: 768px) {
+    body {
+        margin: 0 10%;
+    }
+
+    .gallery-container {
+        font-size: 24px;
+    }
+
+    .divide {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Für Mobilgeräte (bis 480px) */
+@media (max-width: 480px) {
+    body {
+        margin: 0 5%;
+    }
+
+    .gallery-container {
+        font-size: 18px;
+    }
+
+    /* Burger-Menü anzeigen */
+    .burger-menu {
+        display: block;
+    }
+
+    /* Navigation ausblenden, bis sie aktiviert wird */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Navigation aktivieren */
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        font-size: 16px;
+        margin: 10px 0;
+    }
 }
