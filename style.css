@@ -17,14 +17,12 @@ body {
     font-size: 30px;
 }
 
-/* Container für den Titel und das Burger-Menü */
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* H2-Überschrift */
 .page-title {
     margin: 0;
 }
@@ -50,7 +48,6 @@ body {
     color: #000000;
 }
 
-/* Burger-Menü für Mobilgeräte */
 .burger-menu {
     display: none;
     font-size: 30px;
@@ -58,23 +55,20 @@ body {
     color: #888;
 }
 
-/* Grid-Layout */
 .divide {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
 
-/* Galerie-Grundstil */
 #galerie {
     display: grid;
-    gap: 5px; /* Größerer Abstand zwischen den Bildern */
+    gap: 5px; 
     padding: 20px;
 }
 
-/* Die Bilder füllen die gesamte Spalte und sind größer */
 #galerie img {
-    width: 100%; /* Bild passt sich der Spaltenbreite an */
+    width: 100%; 
     height: auto;
     object-fit: cover;
     border: 2px solid #ddd;
@@ -82,33 +76,29 @@ body {
     transition: transform 0.2s;
 }
 
-/* Hover-Effekt für Bilder */
 #galerie img:hover {
     transform: scale(1.05);
 }
 
-/* Responsive Layout für verschiedene Bildschirmgrößen */
 @media (min-width: 1200px) {
     #galerie {
-        grid-template-columns: repeat(3, 1fr); /* Drei große Spalten für große Bildschirme */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
     #galerie {
-        grid-template-columns: repeat(2, 1fr); /* Zwei große Spalten für mittlere Bildschirme */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 767px) {
     #galerie {
-        grid-template-columns: 1fr; /* Eine Spalte für kleine Bildschirme */
+        grid-template-columns: 1fr;
     }
 }
 
 
-
-/* Media Queries für mobile Ansicht */
 
 @media (max-width: 768px) {
     body {
@@ -124,7 +114,6 @@ body {
     }
 }
 
-/* Für Mobilgeräte (bis 480px) */
 @media (max-width: 480px) {
     body {
         margin: 0 5%;
@@ -134,12 +123,10 @@ body {
         font-size: 18px;
     }
 
-    /* Burger-Menü anzeigen */
     .burger-menu {
         display: block;
     }
 
-    /* Navigation ausblenden, bis sie aktiviert wird */
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -147,7 +134,6 @@ body {
         width: 100%;
     }
 
-    /* Navigation aktivieren */
     .nav-menu.active {
         display: flex;
     }
