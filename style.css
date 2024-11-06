@@ -68,9 +68,7 @@ body {
     color: grey;
 }
 
-.td, tr{
-    color: gray;
-}
+
 
 #galerie img {
     height: auto;
@@ -147,3 +145,4 @@ body {
         margin: 10px 0;
     }
 }
+
