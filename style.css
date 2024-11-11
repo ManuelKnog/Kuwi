@@ -96,7 +96,7 @@ body {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     #galerie {
         grid-template-columns: 1fr;
     }
@@ -118,7 +118,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     body {
         margin: 0 5%;
     }
