@@ -73,26 +73,25 @@ body {
 
 .contact-section {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     margin-top: 50px;
-}
-
-.contact-info {
+    justify-content: space-around;
+    gap: 10rem;
+    /* distance between the 2 elements */
+  }
+  
+  .contact-info {
     margin-bottom: 20px;
     font-size: 20px;
     text-align: center;
-}
-
-.social-icons {
+  }
+  
+  .social-icons {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
-}
-
+    gap: 30px;
+  }
 
 
 #galerie img {
