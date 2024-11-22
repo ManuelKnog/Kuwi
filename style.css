@@ -31,7 +31,6 @@ body {
     margin: 0;
 }
 
-/* Navigation */
 .nav-menu {
     display: flex;
     align-items: center;
@@ -72,6 +71,32 @@ body {
     color: grey;
 }
 
+.contact-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: space-around;
+    gap: 10rem;
+    /* distance between the 2 elements */
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .social-icons svg {
+    width: 40px;
+    height: 40px;
+}
 
 
 #galerie img {
