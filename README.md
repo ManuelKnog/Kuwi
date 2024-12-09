@@ -1,1 +1,1 @@
-webseite link zurzeit: https://manuelknog.github.io/Webseite/
+webseite ist zurzeit nicht online
