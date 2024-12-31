@@ -79,31 +79,30 @@ body {
     justify-content: space-around;
     gap: 10rem;
     /* distance between the 2 elements */
-  }
-  
-  .contact-info {
+}
+
+.contact-info {
     margin-bottom: 20px;
     font-size: 20px;
     text-align: center;
-  }
-  
-  .social-icons {
+}
+
+.social-icons {
     display: flex;
     align-items: center;
     gap: 30px;
-  }
+}
 
-  .social-icons svg {
+.social-icons svg {
     width: 40px;
     height: 40px;
 }
 
-
 /* Rand am Bild */
 #BR68 {
     border-color: black;
-border-width: 10px;
-border-style: solid;
+    border-width: 10px;
+    border-style: solid;
 }
 
 #galerie img {
@@ -120,25 +119,23 @@ border-style: solid;
 
 @media (min-width: 1200px) {
     #galerie {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
     #galerie {
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
     #galerie {
         grid-template-columns: 1fr;
     }
 }
 
-
-
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     body {
         margin: 0 10%;
     }
@@ -147,12 +144,32 @@ border-style: solid;
         font-size: 24px;
     }
 
-    .divide {
-        grid-template-columns: 1fr;
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    #galerie {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     body {
         margin: 0 5%;
     }
@@ -180,6 +197,8 @@ border-style: solid;
         font-size: 16px;
         margin: 10px 0;
     }
+
+    #galerie {
+        grid-template-columns: 1fr;
+    }
 }
-
-
